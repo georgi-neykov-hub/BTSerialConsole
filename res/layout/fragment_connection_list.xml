@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:android1="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="52dp">
+
+		<Switch
+			android:id="@+id/device_list_bt_switch"
+			android:layout_width="wrap_content"
+			android:layout_height="52dp"
+			android:gravity="center"
+			android:textAllCaps="true"
+			android:textAppearance="@android:style/Widget.Holo.ActionBar.TabText"
+			android:layout_marginRight="4dp"
+			android:layout_marginLeft="8dp"
+			android:layout_alignParentRight="true"/>
+
+		<TextView
+			android:layout_height="24dp"
+			android:text="@string/device_list_bluetooth_label"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="0dp"
+			android:layout_marginLeft="4dp"
+			android:id="@+id/device_list_bt_label"
+			android:layout_marginTop="4dp"
+			android:layout_toLeftOf="@id/device_list_bt_switch"
+			android:layout_alignParentLeft="true"/>
+
+		<TextView
+		    android:id="@+id/device_list_bt_status"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@id/device_list_bt_label"
+		    android:layout_marginBottom="4dp"
+		    android:layout_marginLeft="4dp"
+		    android:layout_toLeftOf="@id/device_list_bt_switch"
+		    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	</RelativeLayout>
+
+	<View
+	    android1:id="@+id/devicelisthomeView2"
+	    android1:layout_width="match_parent"
+	    android1:layout_height="1dp"
+	    android1:background="?android:attr/dividerVertical" />
+
+	<ListView
+		android:id="@+id/device_list_devices"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="visible"/>
+
+	<TextView
+	    android:id="@+id/device_list_devices_empty"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:clickable="false"
+	    android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    android:gravity="top|center_horizontal"
+	    android:longClickable="false"
+	    android:text="@string/device_list_paired_empty"
+	    android:textAllCaps="false" />
+
+</LinearLayout>
+

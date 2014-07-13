@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoConnectionsFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/device_list_devices_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/fragment_no_connection_message" />
+
+    <ImageView
+        android:id="@+id/fragment_no_connection_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="TODO"
+        android:src="@android:drawable/ic_menu_info_details" />
+    
+</RelativeLayout>

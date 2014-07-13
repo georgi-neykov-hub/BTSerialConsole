@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bluetooth Serial Console</string>
+
+    <!-- Action bar item strings -->
+    <string name="action_settings">Settings</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_devices">Devices</string>
+    <string name="action_setup">Setup</string>
+
+    <!-- ProgressDialog messages -->
+    <string name="progress_dialog_connecting">Connecting&#8230;</string>
+    <string name="progress_dialog_success">Connected</string>
+    <string name="progress_dialog_failed">Failed to connect</string>
+    <string name="progress_dialog_disconnecting">Disconnecting&#8230;</string>
+    <string name="progress_dialog_disconnected">Disconnected</string>
+    <string name="fragment_no_connection_message">There are no open connections. Click on connect above to start communicating&#8230;</string>
+    <string name="notification_service_stop">Stop</string>
+
+    <!-- DataLog Fragment item strings -->
+    <string name="datalog_cr_label">CR</string>
+    <string name="datalog_lf_label">LF</string>
+    <string name="datalog_logtext_hint">Commands are displayed here&#8230;</string>
+    <string name="datalog_cmdline_hint">Enter command&#8230;</string>
+    <string name="datalog_send">Send</string>
+    <string name="datalog_savelog">Save Log</string>
+    <string name="datalog_clearlog">Clear</string>
+
+    <!-- DeviceList Fragment item strings -->
+    <string name="device_list_item_options_cs">Options</string>
+    <string name="device_list_item_icon_cs">Device Icon</string>
+    <string name="device_list_home_editname">Edit Name</string>
+    <string name="device_list_paired_empty">(Enable bluetooth to see more options)</string>
+    <string name="device_list_available_empty">(Start a search for more devices)</string>
+    <string name="device_list_scan_for_devices">Scan for Devices</string>
+    <string name="device_list_scan_for_devices_running">Scanning</string>
+    <string name="device_list_header_home">Home</string>
+    <string name="device_list_header_incoming">Incoming Requests</string>
+    <string name="device_list_header_paired">Paired Devices</string>
+    <string name="device_list_header_available">Available Devices</string>
+    <string name="device_list_discoverability_label">Discoverable</string>
+    <string name="device_list_discoverability_status">Not discoverable</string>
+    <string name="device_list_discoverability_status_discoverable">Device is discoverable for (%1s)</string>
+    <string name="device_list_bluetooth_label">Bluetooth</string>
+    <string name="device_list_bluetooth_enabling">Turning On&#8230;</string>
+    <string name="device_list_bluetooth_disabling">Turning Off&#8230;</string>
+    <string name="device_list_bluetooth_enabled">Turned On</string>
+    <string name="device_list_bluetooth_disabled">Turned Off</string>
+    <string name="device_list_incoming_label">Incoming Connections</string>
+    <string name="device_list_incoming_disabled">Not listening</string>
+    <string name="device_list_incoming_enabling">Starting to listen&#8230;</string>
+    <string name="device_list_incoming_disabling">Stopping&#8230;</string>
+    <string name="device_list_incoming_enabled">Listening</string>
+    <string name="device_list_refresh">Refresh devices</string>
+    <string name="device_list_refresh_running">Refreshing&#8230;</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="datalog_list_empty">(There aren\'t any open device logs.)</string>
+
+</resources>

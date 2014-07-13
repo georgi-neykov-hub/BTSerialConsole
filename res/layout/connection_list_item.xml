@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/device_list_item_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="0dp"
+        android:contentDescription="@string/device_list_item_icon_cs"
+        android:focusable="false"
+        android:src="@drawable/ic_device_list_item_icon_incoming" />
+
+    <View
+        android:id="@+id/device_list_item_divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/device_list_item_options"
+        android:background="?android:attr/dividerVertical"
+        android:focusable="false"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/device_list_item_options"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/device_list_item_options_cs"
+        android:focusable="false"
+        android:src="@drawable/ic_action_setup" />
+
+    <TextView
+        android:id="@+id/device_list_item_adress"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@id/device_list_item_divider"
+        android:ellipsize="middle"
+        android:enabled="false"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/device_list_item_name"
+        android:layout_width="200dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@id/device_list_item_divider"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/device_list_item_icon_secure"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/device_list_item_icon"
+        android:src="@drawable/ic_action_secure"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/device_list_item_icon_bond"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/device_list_item_icon"
+        android:src="@android:drawable/ic_menu_save"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/device_list_vert_divider"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/device_list_item_icon_bond"
+        android:background="?android:attr/dividerVertical"
+        android:focusable="false" />
+
+</RelativeLayout>

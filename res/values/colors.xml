@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="background_color">#000000</color>
+	<color name="consoletext_color">#99cc00</color>
+	<color name="buttontext_color">#FFF</color>
+	<color name="background_creamy">#EDEDED</color>
+	<color name="holo_blue_bright">#33B5E5</color>
+	<color name="background_translucent">#cc000000</color>
+</resources>

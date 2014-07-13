@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:clipChildren="true"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/device_list_refresh_label"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:drawablePadding="8dp"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="@string/device_list_refresh"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/device_list_refresh_spinner"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/device_list_refresh_label"
+        android:clickable="false"
+        android:focusable="false"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

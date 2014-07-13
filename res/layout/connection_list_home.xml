@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="172dp">
+
+	<ImageView
+		android:id="@+id/device_list_home_icon"
+		android:layout_width="32dp"
+		android:layout_height="32dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="8dp"
+		android:layout_marginTop="10dp"
+		android:contentDescription="@string/device_list_item_icon_cs"
+		android:src="@android:drawable/ic_dialog_info"/>
+
+	<ImageButton
+		android:id="@+id/device_list_home_options"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_alignParentRight="true"
+		android:background="?android:attr/selectableItemBackground"
+		android:contentDescription="@string/device_list_item_options_cs"
+		android:src="@android:drawable/ic_menu_edit"
+		android:layout_margin="6dp"
+		android:padding="4dp"/>
+
+	<View
+	    android:id="@+id/device_list_home_divider"
+	    android:layout_width="1dp"
+	    android:layout_height="36dp"
+	    android:layout_marginBottom="8dp"
+	    android:layout_marginLeft="4dp"
+	    android:layout_marginTop="8dp"
+	    android:layout_toLeftOf="@id/device_list_home_options"
+	    android:background="?android:attr/dividerVertical" />
+
+	<TextView
+		android:id="@+id/device_list_home_name"
+		android:layout_width="0dp"
+		android:layout_height="24dp"
+		android:layout_alignParentBottom="false"
+		android:layout_alignParentLeft="false"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="4dp"
+		android:layout_toLeftOf="@id/device_list_home_divider"
+		android:layout_toRightOf="@id/device_list_home_icon"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:singleLine="true"/>
+
+	<TextView
+	    android:id="@+id/device_list_home_adress"
+	    android:layout_width="0dp"
+	    android:layout_height="20dp"
+	    android:layout_alignParentBottom="false"
+	    android:layout_alignParentLeft="false"
+	    android:layout_below="@id/device_list_home_name"
+	    android:layout_marginBottom="4dp"
+	    android:layout_toLeftOf="@id/device_list_home_divider"
+	    android:layout_toRightOf="@id/device_list_home_icon"
+	    android:enabled="false"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_below="@id/device_list_home_options"
+		android:id="@+id/devicelisthomeView1"/>
+
+	<Switch
+		android:layout_height="40dp"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/devicelisthomeView1"
+		android:layout_margin="6dp"
+		android:layout_alignParentRight="true"
+		android:id="@+id/device_list_discoverable_switch"/>
+
+	<TextView
+	    android:id="@+id/devicelisthomeTextView1"
+	    android:layout_width="0dp"
+	    android:layout_height="24dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/devicelisthomeView1"
+	    android:layout_marginLeft="4dp"
+	    android:layout_marginTop="4dp"
+	    android:layout_toLeftOf="@id/device_list_discoverable_switch"
+	    android:gravity="left|center_vertical"
+	    android:singleLine="true"
+	    android:text="@string/device_list_discoverability_label"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_below="@id/device_list_discoverable_switch"
+		android:id="@+id/devicelisthomeView2"/>
+
+	<Switch
+		android:layout_height="40dp"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/devicelisthomeView2"
+		android:layout_margin="6dp"
+		android:layout_alignParentRight="true"
+		android:id="@+id/device_list_incoming_switch"/>
+
+	<TextView
+		android:layout_height="24dp"
+		android:text="@string/device_list_incoming_label"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="0dp"
+		android:layout_below="@id/devicelisthomeView2"
+		android:gravity="left|center_vertical"
+		android:layout_toLeftOf="@id/device_list_incoming_switch"
+		android:layout_alignParentLeft="true"
+		android:singleLine="true"
+		android:id="@+id/devicelisthomeTextView2"
+		android:layout_marginLeft="4dp"
+		android:layout_marginTop="4dp"/>
+
+	<TextView
+	    android:id="@+id/device_list_discoverable_status"
+	    android:layout_width="0dp"
+	    android:layout_height="20dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/devicelisthomeTextView1"
+	    android:layout_marginLeft="4dp"
+	    android:layout_toLeftOf="@id/device_list_discoverable_switch"
+	    android:enabled="false"
+	    android:freezesText="true"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<TextView
+	    android:id="@+id/device_list_incoming_status"
+	    android:layout_width="wrap_content"
+	    android:layout_height="20dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/devicelisthomeTextView2"
+	    android:layout_marginLeft="4dp"
+	    android:layout_toLeftOf="@id/device_list_incoming_switch"
+	    android:enabled="false"
+	    android:freezesText="true"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
+
